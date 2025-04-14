@@ -33,6 +33,7 @@ Let Android Studio finish syncing and setting up the project. Wait until the Gra
 
 To run the app, add a virtual device.  
 I recommend using **Pixel 8a** (or any recent emulator).  
+use API 34 UpsideDownCake
 
 ### 5. Replace Default Files
 
