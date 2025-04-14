@@ -2,8 +2,13 @@
 
 This is a fully working eCommerce app built using the **latest version of Kotlin**. I created this project because I couldn’t find any working examples online or on YouTube that were up-to-date or compatible with the current Kotlin and Android versions. So here’s one that just works.
 
-> ![Preview1](images/appshow1.png)
-> ![Preview2](images/appshow2.png)
+> ![Preview1](images/Picture1.png)
+> ![Preview2](images/Picture2.png)
+> ![Preview3](images/Picture3.png)
+> ![Preview4](images/Picture4.png)
+> ![Preview5](images/Picture5.png)
+> ![Preview6](images/Picture6.png)
+> ![Preview7](images/Picture7.png)
 
 ## 🚀 Getting Started
 
