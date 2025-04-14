@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FF3B4A</color>
+    <color name="colorPrimaryDark">#CC2F3B</color>
+    <color name="colorPrimaryLight">#FF6B77</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="surfaceColor">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#FF000000</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+
+    <!-- Button Colors -->
+    <color name="buttonPrimary">#FF3B4A</color>
+    <color name="buttonSecondary">#03DAC5</color>
+
+    <!-- Input Field Colors -->
+    <color name="inputBackground">#FFFFFF</color>
+    <color name="inputStroke">#FF3B4A</color>
+
+    <!-- Status Colors -->
+    <color name="pending">#FFC107</color>
+    <color name="shipped">#FF9800</color>
+    <color name="outForDelivery">#2196F3</color>
+    <color name="completed">#4CAF50</color>
+
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightGray">#F5F5F5</color>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Banner Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:clipToPadding="false"
+                android:paddingHorizontal="16dp"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Featured Products Section -->
+            <TextView
+                android:id="@+id/featuredTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Products"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featuredRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false" />
+
+            <!-- Best Sellers Section -->
+            <TextView
+                android:id="@+id/bestSellersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Sellers"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestSellersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false" />
+
+            <!-- Electronics Section -->
+            <TextView
+                android:id="@+id/electronicsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Deals on Consoles"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/electronicsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false" />
+
+            <!-- Fashion Section -->
+            <TextView
+                android:id="@+id/fashionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending in Accessories"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fashionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false" />
+
+            <!-- Home Appliances Section -->
+            <TextView
+                android:id="@+id/homeAppliancesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computers And Accessories"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeAppliancesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                android:paddingHorizontal="16dp"
+                android:clipToPadding="false" />
+
+            <!-- Empty Section for Gap -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

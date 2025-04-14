@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Go Back Button -->
+        <Button
+            android:id="@+id/btnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"
+            android:stateListAnimator="@null"/>
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/detailProductImage"
+            android:layout_width="290dp"
+            android:layout_height="251dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@color/lightGray" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/detailProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/detailProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="20sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/detailProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Product Rating -->
+        <TextView
+            android:id="@+id/detailProductRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐☆☆☆☆"
+            android:textSize="20sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Product Category -->
+        <TextView
+            android:id="@+id/detailProductCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: None"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Detailed Specifications -->
+        <TextView
+            android:id="@+id/detailSpecifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specifications:\n- Weight: 1.2 kg\n- Dimensions: 10 x 5 x 2 cm\n- Color: Black"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"
+            android:stateListAnimator="@null"/>
+
+        <!-- User Feedback Section -->
+        <!-- Customer Support Section -->
+        <TextView
+            android:id="@+id/supportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need Help?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSupportInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact our customer support team at support@example.com or call +1-800-123-4567."
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

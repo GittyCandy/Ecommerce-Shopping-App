@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnProceedToPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Payment"
+        android:backgroundTint="@color/buttonPrimary"
+        android:textColor="@color/colorOnPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/textPrimary"/>
+
+    <!-- Delivery Progress -->
+    <TextView
+        android:id="@+id/tvDeliveryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Status: Confirmed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/textPrimary"/>
+
+    <LinearLayout
+        android:id="@+id/deliveryProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="4">
+
+        <!-- Confirmed -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivConfirmed"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:src="@drawable/confirmed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+
+        <!-- Shipped -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivShipped"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:src="@drawable/shipped"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipped"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+
+        <!-- Out for Delivery -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivOutForDelivery"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:src="@drawable/outfordelivery"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out for Delivery"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+
+        <!-- Completed -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivCompleted"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:src="@drawable/done"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Cart Items -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/textPrimary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Keep Shopping -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Shopping"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/textPrimary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecentPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
